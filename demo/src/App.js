@@ -1,3 +1,4 @@
+import './App.css'
 import van from "vanjs-core";
 import { createI18NProvider, useTranslation } from "van-i18n";
 
@@ -6,11 +7,16 @@ const {div, p, button, br} = van.tags
 const locals = {
   fr: {
     start: "Commencer",
-    end: "Terminer",
+    finish: "Terminer",
   },
   en: {
     start: "Start",
-    end: "Finish",
+    finish: "Finish",
+  },
+  ar: {
+    __rtl__ : true,
+    start: "ابدأ",
+    finish: "إنهاء",
   },
 };
 
@@ -21,10 +27,12 @@ const App = () => {
 
   return div(
     p(t("start")),
-    br(),
+    p(t("finish")),
+    // br(),
     button({ onclick: () => setLang("en") }, "EN"),
     button({ onclick: () => setLang("fr") }, "FR"),
+    button({ onclick: () => setLang("ar") }, "Ar"),
   );
 };
 
-document.body.appendChild(App());
+van.add(document.getElementById('app'), App())

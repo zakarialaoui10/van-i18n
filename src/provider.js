@@ -6,4 +6,5 @@ export function createI18NProvider(lang, locals) {
         locals: locals,
     };
   document.documentElement.lang = lang;
+  if(locals[lang]?.__rtl__) document.documentElement.style.direction = 'rtl'
 }
