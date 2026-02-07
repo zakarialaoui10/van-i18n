@@ -1,0 +1,30 @@
+{
+  "name": "van-i18n",
+  "version": "0.0.0",
+  "description": "i18n provider for vanjs",
+  "keywords": [
+    "i18n",
+    "provider",
+    "vanjs"
+  ],
+  "exports":{
+    "." : {
+      "import" : "./src/index.js"
+    }
+  },
+  "homepage": "https://github.com/zakarialaoui10/van-i18n#readme",
+  "bugs": {
+    "url": "https://github.com/zakarialaoui10/van-i18n/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakarialaoui10/van-i18n.git"
+  },
+  "license": "MIT",
+  "author": "zakaria elalaoui",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
