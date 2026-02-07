@@ -1,15 +1,15 @@
 {
   "name": "van-i18n",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "i18n provider for vanjs",
   "keywords": [
     "i18n",
     "provider",
     "vanjs"
   ],
-  "exports":{
-    "." : {
-      "import" : "./src/index.js"
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
     }
   },
   "homepage": "https://github.com/zakarialaoui10/van-i18n#readme",
@@ -26,5 +26,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "vanjs-core": "^1.6.0"
   }
 }
