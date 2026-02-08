@@ -1,0 +1,16 @@
+{
+  "en": {
+    "prog": "Programming",
+    "se": "Software engineering"
+  },
+  "fr": {
+    "prog": "Programmation",
+    "se": "Génie logiciel"
+  },
+  
+  "ar": {
+    "__rtl__" : true,
+    "prog": "برمجة",
+    "se": "هندسة البرمجيات"
+  }
+}

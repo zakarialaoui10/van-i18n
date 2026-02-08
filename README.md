@@ -1,9 +1,15 @@
 # van-i18n
 i18n provider for vanjs app 
 
+## Install 
+
+```bash
+npm i van-i18n
+```
+
 ## API Design 
 
-- `createI18NProvider(lang, loclas)` : initialize once
+- `createI18NProvider(lang, localss)` : initialize once
 - `useTranslation()` : use anywhere, returns :
     - `t(key)` : reactive translation
     - `setLang(lang, rtl = false)` : change language globally
@@ -53,3 +59,8 @@ document.body.appendChild(App());
 - Automatically updates `<html lang=""..`
 - Handle directions
 - Lightweight
+
+## Todo 
+- Interpolation 
+- Intl support 
+
