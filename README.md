@@ -1,6 +1,10 @@
 # van-i18n
 i18n provider for vanjs app 
 
+## Demo 
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/zakarialaoui10-van-i18n-33jjkyg8?file=src%2FApp.js)
+
 ## Install 
 
 ```bash
@@ -63,4 +67,3 @@ document.body.appendChild(App());
 ## Todo 
 - Interpolation 
 - Intl support 
-
