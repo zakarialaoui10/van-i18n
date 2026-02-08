@@ -2,6 +2,8 @@ import './App.css'
 import van from "vanjs-core";
 import { createI18NProvider, useTranslation } from "van-i18n";
 
+const TARGET = document.getElementById('app')
+
 const {div, p, button, br} = van.tags
 
 const locals = {
@@ -20,7 +22,7 @@ const locals = {
   },
 };
 
-createI18NProvider("fr", locals);
+createI18NProvider("en", locals, TARGET);
 
 const App = () => {
   const [t, setLang] = useTranslation();
@@ -35,4 +37,4 @@ const App = () => {
   );
 };
 
-van.add(document.getElementById('app'), App())
+van.add(TARGET, App())
